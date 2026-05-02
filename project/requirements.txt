@@ -1,0 +1,14 @@
+pyspark==3.5.1
+kafka-python
+confluent-kafka
+pandas
+numpy
+scikit-learn
+matplotlib
+streamlit
+plotly
+requests
+tqdm
+pytest
+findspark
+streamlit-autorefresh

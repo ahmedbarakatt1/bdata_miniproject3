@@ -1,0 +1,19 @@
+@echo off
+echo Starting full system...
+
+echo Step 1: Starting Kafka...
+call scripts\start_kafka.bat
+
+echo Step 2: Starting Kafka Producer...
+start "Producer" cmd /c "python src/streaming/kafka_producer.py"
+
+echo Step 3: Starting Spark Streaming...
+start "Streaming" cmd /c "python src/streaming/spark_streaming.py"
+
+echo Step 4: Starting Integration Loop...
+start "Integration" cmd /c "python src/integration/recommendation_engine.py"
+
+echo Step 5: Starting Dashboard...
+start "Dashboard" cmd /c "streamlit run src/dashboard/dashboard.py"
+
+echo All components started.
