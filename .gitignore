@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data and Models (large files)
+*.gz
+*.zip
+*.parquet
+data/raw/*.json
+data/raw/*.pkl
+models/als_model/
+project.zip
+
+# Logs and outputs
+*.log
+output/metrics/
+output/alerts/
+output/recommendations/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spark and Kafka
+.spark-jars/
+metastore_db/
+derby.log
+
+# Checkpoint files
+checkpoint/
+*checkpoint*
+
+# Cache files
+.cache/
+*.cache
+
+# Temporary files
+*.tmp
+temp/
+tmp/
