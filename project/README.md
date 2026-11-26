@@ -2,7 +2,7 @@
 
 A real-time recommendation system for video games using Apache Kafka, Apache Spark (MLlib + Structured Streaming), and Streamlit.
 
-**Team:** [Team Placeholder]
+**Author:** Ahmed Barakat. Course project.
 
 ---
 
@@ -45,18 +45,9 @@ ALS Model (trained on Amazon Reviews) → Recommendation Engine
 
 ---
 
-## Sample Output
+## Results
 
-```
-=== Sample Recommendations ===
-User 42:
-  Call of Duty: Modern Warfare (predicted: 4.823)
-  Halo 5: Guardians (predicted: 4.711)
-  FIFA 22 (predicted: 4.650)
-
-ALERT: Game 17 (FIFA 22) is trending — score 0.92
-ALERT: User 42 activity spike — 30 interactions
-```
+Spark ALS collaborative filtering trained on 1,324,710 Amazon video-game ratings. Four ALS configurations were tuned; the best reached RMSE 1.689. Details are in docs/report/report.md.
 
 ---
 
